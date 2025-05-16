@@ -15,7 +15,7 @@ export async function GET(request: Request) {
 
   try {
     const headers: HeadersInit = {
-      "User-Agent": "BangumiAnimeTracker/1.0",
+      "User-Agent": "whitering/anime-bingo-card (https://github.com/SomiaWhiteRing/anime-bingo-card)",
     }
 
     // 如果环境变量中有 AccessToken，则添加到请求头
@@ -24,7 +24,7 @@ export async function GET(request: Request) {
     }
 
     // 获取用户的动画收藏，使用最大限制
-    const response = await fetch(`${BANGUMI_API_BASE}/v0/users/${username}/collections?subject_type=2&limit=50`, {
+    const response = await fetch(`${BANGUMI_API_BASE}/v0/users/${username}/collections?subject_type=2&type=2&limit=50`, {
       headers,
     })
 
@@ -42,7 +42,7 @@ export async function GET(request: Request) {
       for (let page = 1; page < totalPages; page++) {
         const offset = page * data.limit
         const pageResponse = await fetch(
-          `${BANGUMI_API_BASE}/v0/users/${username}/collections?subject_type=2&limit=${data.limit}&offset=${offset}`,
+          `${BANGUMI_API_BASE}/v0/users/${username}/collections?subject_type=2&type=2&limit=${data.limit}&offset=${offset}`,
           { headers },
         )
 

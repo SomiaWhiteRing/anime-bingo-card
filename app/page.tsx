@@ -326,12 +326,38 @@ export default function Home() {
           {avatarUrl && <img src={avatarUrl || "/placeholder.svg"} alt="用户头像" className="avatar" />}
           {displayName && <span className="username">{displayName}的动画生涯宾果卡</span>}
         </div>
-        <div className="site-info">动画生涯宾果卡 (bangumi-bingo.vercel.app)</div>
+        <div className="site-info">动画生涯宾果卡 by 苍旻白轮 (animebingo.shatranj.space)</div>
       </div>
 
       <footer className="mt-8 text-center text-gray-500 text-sm py-4 border-t">
         <p>© 2025 动画生涯宾果卡 | 数据来源: Bangumi.tv</p>
         <p className="mt-1">本工具仅供学习交流使用，与Bangumi官方无关</p>
+        <p className="flex items-center justify-center mt-1">
+          <a 
+            href="https://github.com/SomiaWhiteRing/anime-bingo-card" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-2 inline-flex items-center"
+          >
+            <img 
+              src="https://img.shields.io/github/stars/SomiaWhiteRing/anime-bingo-card?style=social" 
+              alt="GitHub Stars" 
+              className="align-middle"
+            />
+          </a>
+          <a 
+            href="https://hits.sh/github.com/SomiaWhiteRing/anime-bingo-card/"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="ml-2 inline-flex items-center"
+          >
+            <img 
+              src="https://hits.sh/github.com/SomiaWhiteRing/anime-bingo-card.svg?label=visitors&color=007ec6"
+              alt="Visitors Count"
+              className="align-middle"
+            />
+          </a>
+        </p>
       </footer>
     </main>
   )

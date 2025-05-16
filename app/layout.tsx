@@ -14,8 +14,8 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
-        <title>Bangumi 动画热度查看器</title>
-        <meta name="description" content="查看历年热门动画观看情况" />
+        <title>动画生涯宾果卡</title>
+        <meta name="description" content="动画生涯宾果卡生成器" />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>

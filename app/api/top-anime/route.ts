@@ -15,7 +15,7 @@ export async function GET(request: Request) {
 
   try {
     const headers: HeadersInit = {
-      "User-Agent": "BangumiAnimeTracker/1.0",
+      "User-Agent": "whitering/anime-bingo-card (https://github.com/SomiaWhiteRing/anime-bingo-card)",
       "Content-Type": "application/json",
     }
 
@@ -31,7 +31,7 @@ export async function GET(request: Request) {
       body: JSON.stringify({
         keyword: "",
         sort: "heat",
-        meta_tags: ["TV","日本"],
+        meta_tags: ["TV", "日本"],
         filter: {
           type: [2], // 动画类型
           air_date: [`>=${year}-01-01`, `<=${year}-12-31`],

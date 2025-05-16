@@ -30,9 +30,8 @@ export async function GET(request: Request) {
 
   try {
     const headers: HeadersInit = {
-      "User-Agent": "BangumiAnimeTracker/1.0",
+      "User-Agent": "whitering/anime-bingo-card (https://github.com/SomiaWhiteRing/anime-bingo-card)",
     }
-
     // 如果环境变量中有 AccessToken，则添加到请求头
     if (process.env.BANGUMI_ACCESS_TOKEN) {
       headers["Authorization"] = `Bearer ${process.env.BANGUMI_ACCESS_TOKEN}`

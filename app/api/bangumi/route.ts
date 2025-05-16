@@ -34,7 +34,7 @@ export async function GET(request: Request) {
 
 async function fetchUserInfo(username: string, accessToken: string | null) {
   const headers: HeadersInit = {
-    "User-Agent": "BangumiAnimeTracker/1.0",
+    "User-Agent": "whitering/anime-bingo-card (https://github.com/SomiaWhiteRing/anime-bingo-card)",
   }
 
   if (accessToken) {
@@ -54,7 +54,7 @@ async function fetchUserInfo(username: string, accessToken: string | null) {
 
 async function fetchUserCollections(username: string, accessToken: string | null) {
   const headers: HeadersInit = {
-    "User-Agent": "BangumiAnimeTracker/1.0",
+    "User-Agent": "whitering/anime-bingo-card (https://github.com/SomiaWhiteRing/anime-bingo-card)",
   }
 
   if (accessToken) {
@@ -76,7 +76,7 @@ async function fetchUserCollections(username: string, accessToken: string | null
 
 async function fetchTopAnimeByYear(accessToken: string | null) {
   const headers: HeadersInit = {
-    "User-Agent": "BangumiAnimeTracker/1.0",
+    "User-Agent": "whitering/anime-bingo-card (https://github.com/SomiaWhiteRing/anime-bingo-card)",
     "Content-Type": "application/json",
   }
 
